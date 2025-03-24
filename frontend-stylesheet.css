@@ -1,7 +1,76 @@
-.bg{
-    background-color: hsl(216, 15%, 48%);
+/* Card container */
+.bg {
+    background-color: #d5e1ef;
     background-size: cover;
-    background-repeat: no-repeat;
-    border-radius:5px;
-    box-shadow: 5px 5px 10px #dddddd;
+    background-position: center;
+    box-shadow: 5px 5px 10px #dddddd97;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 320px;
+    padding: 20px;
+    width: 90%;
+    height: auto;
+
+}
+.qr-text-container{
+    background-color:white;
+    text-align: center;
+    border-radius:10px;
+    box-shadow: 5px 5px 10px #cedae89b;
+    padding: 12px;
+    margin-top: 15px;
+}
+.qr-pic{
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto; 
+}
+
+.qr-text-container-heading{
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+    font-family: "outfit", sans-serif;
+}
+.qr-text-container-para{
+    font-size: 12px; /* 15px */
+    font-weight: 400;
+    color: hsl(216, 15%, 48%);
+    font-family: "outfit", sans-serif;
+}
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .bg {
+        max-width: 400px;
+    }
+
+    .qr-text-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .qr-text-container p {
+        font-size: 1rem;
+    }
+}
+/* Ensure the body centers the content */
+/* Ensure the body takes full height and centers content */
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #d5e1ef; /* Matches the preview background */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh; /* Ensure the body takes the full viewport height */
+    margin: 0;
+}
+
+/* Footer stays at the bottom */
+footer.attribution {
+    margin-top: auto; /* Pushes the footer to the bottom */
+    text-align: center; /* Centers the footer text */
+    font-size: 0.875rem; /* Slightly smaller font size */
+    color: hsl(216, 15%, 48%);
 }
